@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f29cfee-8e6d-4311-adf2-ab5b97e6091e" name="更改" comment="初始化">
+    <list default="true" id="6f29cfee-8e6d-4311-adf2-ab5b97e6091e" name="更改" comment="引入依赖">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +50,7 @@
       <updated>1759058202770</updated>
       <workItem from="1759058204741" duration="1678000" />
       <workItem from="1759059890605" duration="564000" />
+      <workItem from="1759663590382" duration="1331000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <option name="closed" value="true" />
@@ -83,7 +84,23 @@
       <option name="project" value="LOCAL" />
       <updated>1759060145894</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="引入依赖">
+      <option name="closed" value="true" />
+      <created>1759664083805</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1759664083805</updated>
+    </task>
+    <task id="LOCAL-00006" summary="引入依赖">
+      <option name="closed" value="true" />
+      <created>1759665184844</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1759665184844</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,7 +111,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -102,6 +131,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化" />
+    <MESSAGE value="引入依赖" />
+    <option name="LAST_COMMIT_MESSAGE" value="引入依赖" />
   </component>
 </project>
