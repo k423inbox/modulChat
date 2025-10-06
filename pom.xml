@@ -117,11 +117,11 @@
       <artifactId>netty-all</artifactId>
       <version>${netty.version}</version>
     </dependency>
-<!--    <dependency>-->
-<!--      <groupId>org.redisson</groupId>-->
-<!--      <artifactId>redission</artifactId>-->
-<!--      <version>${redisson.version}</version>-->
-<!--    </dependency>-->
+    <dependency>
+      <groupId>org.redisson</groupId>
+      <artifactId>redisson</artifactId>
+      <version>${redisson.version}</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
