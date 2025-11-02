@@ -130,7 +130,7 @@
         <artifactId>spring-boot-maven-plugin</artifactId>
         <version>2.2.6.RELEASE</version>
         <configuration>
-          <mainClass>com.chat.WxChatApplication</mainClass>
+          <mainClass>com.chat.ChatApplication</mainClass>
         </configuration>
       </plugin>
     </plugins>
