@@ -1,5 +1,6 @@
 package com.chat.test;
 
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -12,6 +13,25 @@ public class socketServer {
             Socket socket =   server.accept();
             String ip = socket.getInetAddress().getHostAddress();
             System.out.println("有客户端链接ip "+ip+",端口 "+socket.getPort());
+
+            new Thread(()-> {
+                while (true){
+                    try {
+                        InputStream inputStream=socket.getInputStream();
+                        InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+                        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+                        String readData = bufferedReader.readLine();
+                        System.out.println("收到客户端消息->"+readData);
+
+                        OutputStream outputStream = socket.getOutputStream();
+                        PrintWriter  printWriter = new PrintWriter(outputStream);
+                        printWriter.println("服务端收到的消息为"+readData);
+                        printWriter.flush();
+                    }catch (Exception e){
+                        e.printStackTrace();
+                    }
+                }
+            }).start();
 
         }catch (Exception e){
             e.printStackTrace();
