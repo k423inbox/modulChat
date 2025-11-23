@@ -17,8 +17,14 @@ public class socketClient {
             new Thread(()->{
                 while (true){
                     String input = scanner.nextLine();
-                    printWriter.println(input);
-                    printWriter.flush();
+                    try {
+                        printWriter.println(input);
+                        printWriter.flush();
+                    }catch (Exception e){
+                        e.printStackTrace();
+                        break;
+                    }
+
                 }
             }).start();
 
@@ -32,6 +38,7 @@ public class socketClient {
                         System.out.println("收到的消息为： "+readData);
                     }catch (Exception e){
                         e.printStackTrace();
+                        break;
                     }
                 }
             }).start();
